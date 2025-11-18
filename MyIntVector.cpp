@@ -20,8 +20,10 @@ private:
         
         delete[] data;
         data = arr;
-
+        capacity = double_capacity;
         /* TODO */
+
+        
         // capacity의 크기를 2배로 늘리고, 새로운 배열을 생성하세요.
         // 기존 데이터를 새로운 배열로 복사한 뒤, 기존 배열을 해제하세요.
     }

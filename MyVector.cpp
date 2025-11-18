@@ -22,6 +22,7 @@ private:
         
         delete[] data;
         data = arr;
+        capacity = double_capacity;
         }
 
 public:
