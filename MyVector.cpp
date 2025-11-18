@@ -6,15 +6,15 @@ using namespace std;
 template<typename T>
 class MyVector {
 private:
-    int* data;
+    T* data;
     size_t capacity;
     size_t length;
     
     void resize() {
         cout << "Resize: " << capacity << " -> " << capacity * 2 << endl;
 
-        int double_capacity = capacity*2;
-        int * arr= new int[double_capacity];
+        size_t double_capacity = capacity*2;
+        T* arr= new int[double_capacity];
 
         for (int i=0; i<length; i++) {
             arr[i] = data[i];
